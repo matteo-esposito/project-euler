@@ -1,3 +1,8 @@
+<p>
+  <img src="https://projecteuler.net/profile/matteo-esposito.png" height="60" width="200">
+</p>
+
+
 # Project Euler
 Questions from Project Euler
 
