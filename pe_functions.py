@@ -64,6 +64,22 @@ def splitLongString(word, step):
     lambda word, step: [word[i:i+step] for i in range(0, len(word), step)]
 
 
+def factorial(n):
+    '''
+    Returns the factorial of a number.
+
+    Args:
+        n(int): number for operation
+
+    Returns:
+        Factorial.
+    '''
+    if n == 0:
+        return 1
+    else:
+        return factorial(n-1)*n
+
+
 def runSolution(func, *args):
     '''
     Run and print main program and record how long it takes to execute.
