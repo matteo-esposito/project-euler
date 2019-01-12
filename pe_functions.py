@@ -66,10 +66,10 @@ def splitLongString(word, step):
 
 def factorial(n):
     '''
-    Returns the factorial of a number.
+    Calculates the factorial of a positive integer.
 
     Args:
-        n(int): number for operation
+        n (int): number for operation
 
     Returns:
         Factorial.
@@ -78,6 +78,25 @@ def factorial(n):
         return 1
     else:
         return factorial(n-1)*n
+
+
+def fib(n):
+    '''
+    Generates a fixed number of values from the Fibonacci sequence.
+    ** Non-recursive approach O(n)
+
+    Args:
+        n (int): The fibonacci number desired.
+
+    Returns:
+        Fibonacci number at position n.
+    '''
+    a = 1
+    b = 0
+    while n > 1:
+        a, b = a+b, a
+        n -= 1
+    return a
 
 
 def runSolution(func, *args):
@@ -95,4 +114,4 @@ def runSolution(func, *args):
     start = time.clock()
     print(str(func(*args)))
     end = time.clock()
-    print('Time elapsed: ' + '(' + str(end - start) + 's)')
+    print('Time elapsed: ({0:.{1}f}s)'.format((end-start), 4))
