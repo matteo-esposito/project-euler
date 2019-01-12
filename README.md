@@ -1,10 +1,9 @@
 <p>
-  <img src="https://projecteuler.net/profile/833matteo.png" height="60" width="200">
+  <img src="https://projecteuler.net/profile/330matteo.png" height="60" width="200">
 </p>
 
 
 # Project Euler
-Questions from Project Euler
 
 Project Euler (named after Leonhard Euler) is a website dedicated to a series of computational problems intended to be solved with computer programs. 
 

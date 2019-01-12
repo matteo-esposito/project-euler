@@ -99,6 +99,22 @@ def fib(n):
     return a
 
 
+def binary(n):
+    '''
+    Convert a positive integer to its binary(base-2) representation. We will
+    make use of recurison and flooring division to make a concise function.
+    
+    Args:
+        n (int): Base 10 integer to be converted to binary.
+
+    Returns:
+        Binary representation of provided integer (e.g. 13 => 1101)
+    '''
+    if n > 1:
+        binary(n//2)
+    print(n % 2, end="")
+
+
 def runSolution(func, *args):
     '''
     Run and print main program and record how long it takes to execute.
