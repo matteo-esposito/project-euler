@@ -64,6 +64,20 @@ def splitLongString(word, step):
     lambda word, step: [word[i:i+step] for i in range(0, len(word), step)]
 
 
+def isPentagonal(n):
+    '''
+    Checks if a positive integer is pentagonal (i.e. equal to i(3i-1)/2)
+
+    Args:
+        n (int): Integer to be checked
+
+    Returns:
+        bool: Is the integer pentagonal
+    '''
+    for i in range(3000):
+        return n == i*(3*i-1)/2
+
+
 def factorial(n):
     '''
     Calculates the factorial of a positive integer.
