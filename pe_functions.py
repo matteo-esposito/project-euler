@@ -7,8 +7,6 @@ Author:
     Matteo Esposito
 '''
 import numpy as np
-import math
-import sys
 import time
 
 
@@ -117,7 +115,7 @@ def binary(n):
     '''
     Convert a positive integer to its binary(base-2) representation. We will
     make use of recurison and flooring division to make a concise function.
-    
+
     Args:
         n (int): Base 10 integer to be converted to binary.
 
@@ -145,3 +143,102 @@ def runSolution(func, *args):
     print(str(func(*args)))
     end = time.clock()
     print('Time elapsed: ({0:.{1}f}s)'.format((end-start), 4))
+
+
+def isPandigital(digit):
+    '''
+    Checks if a positive integer is pandigital (i.e. for an n-digit number, it uses values 1 to n exactly once)
+
+    Args:
+        n (int): Integer to be checked
+
+    Returns:
+        bool: Is the integer pandigital
+    '''
+    # Turn digit input into list of digits
+    a = digit
+    b = str(digit)
+    c = []
+    for num in b:
+        c.append(num)
+
+    # Compare lengths of list of digits and unique digits
+    if (len(np.unique(np.array(c))) == len(c) and '0' not in c):
+        return True
+    else:
+        return False
+
+def isPandigitalProduct(x, y):
+    '''
+    Checks if a product and its components form a pandigital number 1-9
+
+    Returns:
+        bool: Is the product combination pandigital (i.e. 39 x 186 = 7254 -> 123456789)
+    '''
+    # Turn digit input into list of digits
+    p = x*y
+    string = list(str(x) + str(y) + str(p))
+
+    # Compare lengths of list of digits and unique digits
+    if (len(np.unique(np.array(string))) == len(string) and sorted(string) == list('123456789')):
+        return True
+    else:
+        return False
+
+def isRightTriangle(x, y, z):
+    '''
+    Checks if 3 dimensions makeup a right triangle.
+
+    Returns:
+        bool: Are the 3 dims right triangle components?
+    '''
+    return z**2 == x**2 + y**2
+
+def isAbundant(n):
+    '''
+    A perfect number is a number for which the sum of its proper divisors is exactly equal to the number. For example, the sum of the proper divisors of 28 would be 1 + 2 + 4 + 7 + 14 = 28, which means that 28 is a perfect number.
+
+    A number n is called deficient if the sum of its proper divisors is less than n and it is called abundant if this sum exceeds n.
+   
+    Returns:
+        bool: Is n abundant?
+    '''
+    factor_list = []
+    for i in range(1, n//2+1):
+        if n % i == 0:
+            factor_list.append(i)
+
+    return sum(factor_list) > n
+
+def isPerfect(n):
+    '''
+    A perfect number is a number for which the sum of its proper divisors is exactly equal to the number. For example, the sum of the proper divisors of 28 would be 1 + 2 + 4 + 7 + 14 = 28, which means that 28 is a perfect number.
+
+    A number n is called deficient if the sum of its proper divisors is less than n and it is called abundant if this sum exceeds n.
+   
+    Returns:
+        bool: Is n perfect?
+    '''
+    factor_list = []
+    for i in range(1, n//2+1):
+        if n % i == 0:
+            factor_list.append(i)
+
+    return sum(factor_list) == n
+
+def isDeficient(n):
+    '''
+    A perfect number is a number for which the sum of its proper divisors is exactly equal to the number. For example, the sum of the proper divisors of 28 would be 1 + 2 + 4 + 7 + 14 = 28, which means that 28 is a perfect number.
+
+    A number n is called deficient if the sum of its proper divisors is less than n and it is called abundant if this sum exceeds n.
+   
+    Returns:
+        bool: Is n deficient?
+    '''
+    factor_list = []
+    for i in range(1, n//2+1):
+        if n % i == 0:
+            factor_list.append(i)
+
+    return sum(factor_list) < n
+   

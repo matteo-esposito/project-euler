@@ -1,7 +1,6 @@
 # Project Euler
 # Problem 21: Amicable numbers
 import pe_functions as pe
-import numpy as np
 
 
 def sol():
@@ -20,12 +19,12 @@ def sol():
         pairs = []
         for i in range(10000):
             index = sums[i]
-            if i + 1 < index and 1 <= index
-            and index <= 10000 and sums[index-1] == i + 1:
+            if i + 1 < index and 1 <= index and index <= 10000 and sums[index-1] == (i + 1):
                 pairs.append([i+1, index])
         return pairs
 
     return sum([sum(pair) for pair in amicablePairs()])
+
 
 if __name__ == '__main__':
     pe.runSolution(sol)
