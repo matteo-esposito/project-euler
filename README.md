@@ -1,5 +1,5 @@
 <p>
-  <img src="https://projecteuler.net/profile/matteoesposito.png" height="60" width="200">
+  <img src="https://projecteuler.net/profile/matteo-esposito.png" height="60" width="200">
 </p>
 
 

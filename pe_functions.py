@@ -9,7 +9,6 @@ Author:
 import numpy as np
 import time
 
-
 def isPrime(n):
     '''
     Determines if a given integer n is prime.

@@ -7,7 +7,6 @@ def sol():
     '''
     Solution to project euler problem.
     '''
-
     # Read text file
     with open("p022-names.txt", "r") as f:
         line = f.read()
