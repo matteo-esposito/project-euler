@@ -2,6 +2,10 @@
   <img src="https://projecteuler.net/profile/matteo-esposito.png" height="60" width="200">
 </p>
 
+<p align = "center">
+  <img src="https://projecteuler.net/cache/statistics_problems_graph.png" height="312.5" width="412.5">
+  <img src="https://projecteuler.net/cache/statistics_problems_graph2.png" height="312.5" width="412.5">
+</p>
 
 # Project Euler
 
