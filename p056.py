@@ -9,7 +9,6 @@ def sol():
     val = 0
     val_list = []
     sums = []
-
     for a in range(50, 100):
         for b in range(50, 100):
             val_list.append(a**b)
