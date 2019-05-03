@@ -46,6 +46,15 @@ def numDivisors(value):
             numFactors -= 1
     return numFactors
 
+def divisors(n):
+    '''
+    Returns divisors/factors of a given positive integer.
+    '''
+    divs = []
+    for i in range(1, n+1):
+        if n % i == 0:
+            divs.append(i)
+    return divs
 
 def splitLongString(word, step):
     '''
@@ -241,3 +250,9 @@ def isDeficient(n):
 
     return sum(factor_list) < n
    
+def isPalindrome(n):
+    '''
+    Returns whether or not a given integer is a palindrome.
+    '''
+    return str(n) == str(n)[::-1]
+
