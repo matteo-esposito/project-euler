@@ -1,5 +1,5 @@
 <p align = "center">
-  <img src="https://projecteuler.net/profile/matteo1234esposito.png" height="60" width="200">
+  <img src="https://projecteuler.net/profile/matteo-esposito.png" height="60" width="200">
 </p>
 
 <p align = "center">
