@@ -27,7 +27,6 @@ def isPrime(n):
                 return False
         return True
 
-
 def numDivisors(value):
     '''
     Finds the number of divisors of a positive integer.
@@ -69,7 +68,6 @@ def splitLongString(word, step):
     '''
     lambda word, step: [word[i:i+step] for i in range(0, len(word), step)]
 
-
 def isPentagonal(n):
     '''
     Checks if a positive integer is pentagonal (i.e. equal to i(3i-1)/2)
@@ -82,7 +80,6 @@ def isPentagonal(n):
     '''
     for i in range(3000):
         return n == i*(3*i-1)/2
-
 
 def factorial(n):
     '''
@@ -98,7 +95,6 @@ def factorial(n):
         return 1
     else:
         return factorial(n-1)*n
-
 
 def fib(n):
     '''
@@ -118,7 +114,6 @@ def fib(n):
         n -= 1
     return a
 
-
 def binary(n):
     '''
     Convert a positive integer to its binary(base-2) representation. We will
@@ -133,7 +128,6 @@ def binary(n):
     if n > 1:
         binary(n//2)
     print(n % 2, end="")
-
 
 def runSolution(func, *args):
     '''
@@ -151,7 +145,6 @@ def runSolution(func, *args):
     print(str(func(*args)))
     end = time.clock()
     print('Time elapsed: ({0:.{1}f}s)'.format((end-start), 4))
-
 
 def isPandigital(digit):
     '''
@@ -256,3 +249,16 @@ def isPalindrome(n):
     '''
     return str(n) == str(n)[::-1]
 
+def num_length(n):
+    """Calculates the length of a given number.
+    
+    Arguments:
+        n {int} -- Integer whose length is desired
+    
+    Returns:
+        int -- length of integer n.
+    """
+    digits = []
+    for char in str(n):
+        digits += char
+    return len(digits)
