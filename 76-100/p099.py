@@ -1,5 +1,5 @@
 # Project Euler
-# Problem 57: Square root convergents
+# Problem 99: Largest exponential
 import pe_functions as pe
 import math
 
